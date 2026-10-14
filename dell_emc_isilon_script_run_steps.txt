@@ -1,0 +1,19 @@
+How to run dell_emc_isilon.sh
+=============================
+
+Steps
+  1. Copy dell_emc_isilon.sh to the Datadog Agent host.
+
+  2. Open it and set these values at the top:
+         ISILON_IP="<cluster IP or hostname>"
+         ISILON_PORT="8080"
+         USERNAME="<OneFS username>"
+         PASSWORD="<OneFS password>"
+
+  3. Make it executable and run it:
+         chmod +x dell_emc_isilon.sh
+         ./dell_emc_isilon.sh > dell_emc_isilon_output.log
+
+  4. When it finishes, one file is saved in the directory you ran the
+     script from:
+         dell_emc_isilon_output.log
